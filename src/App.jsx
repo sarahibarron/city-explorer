@@ -25,8 +25,8 @@ export default function App() {
   }
 
   return (
-    <>
-      <h1>Choose Your Location</h1>
+    <main>
+      <h1>CHOOSE YOUR LOCATION</h1>
       <LocationForm getLocation={getLocation} handleChange={handleChange} />
       <h2>{location.display_name}</h2>
       <h2>
@@ -36,6 +36,6 @@ export default function App() {
         src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}&zoom=16`}
         alt="location map"
       />
-    </>
+    </main>
   );
 }
